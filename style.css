@@ -9,7 +9,7 @@
 }
 
 header{
-    background-image: url("background1.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("graycolor.jpg");
     height: 100vh;
     background-size:cover;
     background-position: center center;
@@ -35,14 +35,13 @@ header{
     font-size: 14px;
 }
 
-.nav-area li a:hover{
-    background: #fff;
-    color: #333;
+.nav-item a:hover{
+    background-color: lightgray;
 }
 
 .welcome-text{
     position: absolute;
-    width: 600px;
+    width: 500px;
     height: 300px;
     margin: 20% 30%;
     text-align: center;
@@ -68,8 +67,28 @@ header{
 
 }
 
-
 .welcome-text a:hover{
     background: #fff;
     color: #333
 }
+
+.navbar-nav a:hover{
+    background: #fff;
+    color: #333
+}
+
+
+.navbar-nav h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.header {
+    height: 300px;
+    background-color:black;
+    font-size:20px;
+    text-align:center;
+}
+
