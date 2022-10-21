@@ -19,7 +19,7 @@
 		border-bottom-style: solid;
 		border-width: 5px;
 	}
-	
+
 	.footer {
 		text-align: center;
 		padding: 32px;
@@ -62,6 +62,114 @@
 			max-width: 100%;
 		}
 	}
+
+	.myImages {
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	.myImages:hover {
+		opacity: 0.7;
+	}
+
+	/* The Modal (ba\ckground) */
+	.modal {
+		display: none;
+		/* Hidden by default */
+		position: fixed;
+		/* Stay in place */
+		z-index: 1;
+		/* Sit on top */
+		padding-top: 100px;
+		/* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%;
+		/* Full width */
+		height: 100%;
+		/* Full height */
+		overflow: auto;
+		/* Enable scroll if needed */
+		background-color: rgb(0, 0, 0);
+		/* Fallback color */
+		background-color: rgba(0, 0, 0, 0.9);
+		/* Black w/ opacity */
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+	}
+
+	/* Caption of Modal Image */
+	#caption {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+		text-align: center;
+		color: #ccc;
+		padding: 10px 0;
+		height: 150px;
+	}
+
+	/* Add Animation */
+	.modal-content,
+	#caption {
+		-webkit-animation-name: zoom;
+		-webkit-animation-duration: 0.6s;
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+		from {
+			-webkit-transform: scale(0)
+		}
+
+		to {
+			-webkit-transform: scale(1)
+		}
+	}
+
+	@keyframes zoom {
+		from {
+			transform: scale(0)
+		}
+
+		to {
+			transform: scale(1)
+		}
+	}
+
+	/* The Close Button */
+	.close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px) {
+		.modal-content {
+			width: 100%;
+		}
+	}
 </style>
 
 <body>
@@ -75,80 +183,99 @@
 	<!-- Photo Grid -->
 	<div class="row">
 		<div class="column">
-			<img src="artwork/lowRes/1.jpg" style="width:100%">
-			<img src="artwork/lowRes/2.jpg" style="width:100%">
-			<img src="artwork/lowRes/3.jpg" style="width:100%">
-			<img src="artwork/lowRes/4.jpg" style="width:100%">
-			<img src="artwork/lowRes/5.jpg" style="width:100%">
-			<img src="artwork/lowRes/6.jpg" style="width:100%">
-			<img src="artwork/lowRes/7.jpg" style="width:100%">
-			<img src="artwork/lowRes/8.jpg" style="width:100%">
-			<img src="artwork/lowRes/9.jpg" style="width:100%">
-			<img src="artwork/lowRes/10.jpg" style="width:100%">
-			<img src="artwork/lowRes/11.jpg" style="width:100%">
-			<img src="artwork/lowRes/12.jpg" style="width:100%">
-			<img src="artwork/lowRes/13.jpg" style="width:100%">
-			<img src="artwork/lowRes/14.jpg" style="width:100%">
-			<img src="artwork/lowRes/15.jpg" style="width:100%">
+			<img class=myImages id=img1 src="artwork/lowRes/1.jpg" style="width:100%">
+			<img class=myImages id=img2 src="artwork/lowRes/2.jpg" style="width:100%">
+			<img class=myImages id=img3 src="artwork/lowRes/3.jpg" style="width:100%">
+			<img class=myImages id=img4 src="artwork/lowRes/4.jpg" style="width:100%">
+			<img class=myImages id=img5 src="artwork/lowRes/5.jpg" style="width:100%">
+			<img class=myImages id=img7 src="artwork/lowRes/7.jpg" style="width:100%">
+			<img class=myImages id=img8 src="artwork/lowRes/8.jpg" style="width:100%">
+			<img class=myImages id=img9 src="artwork/lowRes/9.jpg" style="width:100%">
+			<img class=myImages id=img10 src="artwork/lowRes/10.jpg" style="width:100%">
+			<img class=myImages id=img11 src="artwork/lowRes/11.jpg" style="width:100%">
+			<img class=myImages id=img13 src="artwork/lowRes/13.jpg" style="width:100%">
 		</div>
 		<div class="column">
-			<img src="artwork/lowRes/30.jpg" style="width:100%">
-			<img src="artwork/lowRes/16.jpg" style="width:100%">
-			<img src="artwork/lowRes/17.jpg" style="width:100%">
-			<img src="artwork/lowRes/18.jpg" style="width:100%">
-			<img src="artwork/lowRes/19.jpg" style="width:100%">
-			<img src="artwork/lowRes/20.jpg" style="width:100%">
-			<img src="artwork/lowRes/21.jpg" style="width:100%">
-			<img src="artwork/lowRes/22.jpg" style="width:100%">
-			<img src="artwork/lowRes/23.jpg" style="width:100%">
-			<img src="artwork/lowRes/24.jpg" style="width:100%">
-			<img src="artwork/lowRes/25.jpg" style="width:100%">
-			<img src="artwork/lowRes/26.jpg" style="width:100%">
-			<img src="artwork/lowRes/27.jpg" style="width:100%">
-			<img src="artwork/lowRes/28.jpg" style="width:100%">
-			<img src="artwork/lowRes/29.jpg" style="width:100%">
-			<img src="artwork/lowRes/61.jpg" style="width:100%">
+			<img class=myImages id=img14 src="artwork/lowRes/14.jpg" style="width:100%">
+			<img class=myImages id=img15 src="artwork/lowRes/15.jpg" style="width:100%">
+			<img class=myImages id=img16 src="artwork/lowRes/30.jpg" style="width:100%">
+			<img class=myImages id=img17 src="artwork/lowRes/16.jpg" style="width:100%">
+			<img class=myImages id=img18 src="artwork/lowRes/17.jpg" style="width:100%">
+			<img class=myImages id=img19 src="artwork/lowRes/18.jpg" style="width:100%">
+			<img class=myImages id=img20 src="artwork/lowRes/19.jpg" style="width:100%">
+			<img class=myImages id=img21 src="artwork/lowRes/20.jpg" style="width:100%">
+			<img class=myImages id=img22 src="artwork/lowRes/21.jpg" style="width:100%">
+			<img class=myImages id=img23 src="artwork/lowRes/22.jpg" style="width:100%">
+			<img class=myImages id=img26 src="artwork/lowRes/25.jpg" style="width:100%">
+			<img class=myImages id=img27 src="artwork/lowRes/26.jpg" style="width:100%">
+			<img class=myImages id=img28 src="artwork/lowRes/27.jpg" style="width:100%">
 		</div>
 		<div class="column">
-			<img src="artwork/lowRes/31.jpg" style="width:100%">
-			<img src="artwork/lowRes/32.jpg" style="width:100%">
-			<img src="artwork/lowRes/33.jpg" style="width:100%">
-			<img src="artwork/lowRes/34.jpg" style="width:100%">
-			<img src="artwork/lowRes/35.jpg" style="width:100%">
-			<img src="artwork/lowRes/36.jpg" style="width:100%">
-			<img src="artwork/lowRes/37.jpg" style="width:100%">
-			<img src="artwork/lowRes/38.jpg" style="width:100%">
-			<img src="artwork/lowRes/39.jpg" style="width:100%">
-			<img src="artwork/lowRes/40.jpg" style="width:100%">
-			<img src="artwork/lowRes/41.jpg" style="width:100%">
-			<img src="artwork/lowRes/42.jpg" style="width:100%">
-			<img src="artwork/lowRes/45.jpg" style="width:100%">
-			<img src="artwork/lowRes/62.jpg" style="width:100%">
+			<img class=myImages id=img29 src="artwork/lowRes/28.jpg" style="width:100%">
+			<img class=myImages id=img30 src="artwork/lowRes/29.jpg" style="width:100%">
+			<img class=myImages id=img32 src="artwork/lowRes/31.jpg" style="width:100%">
+			<img class=myImages id=img33 src="artwork/lowRes/32.jpg" style="width:100%">
+			<img class=myImages id=img34 src="artwork/lowRes/33.jpg" style="width:100%">
+			<img class=myImages id=img35 src="artwork/lowRes/34.jpg" style="width:100%">
+			<img class=myImages id=img36 src="artwork/lowRes/35.jpg" style="width:100%">
+			<img class=myImages id=img37 src="artwork/lowRes/36.jpg" style="width:100%">
+			<img class=myImages id=img38 src="artwork/lowRes/37.jpg" style="width:100%">
+			<img class=myImages id=img39 src="artwork/lowRes/38.jpg" style="width:100%">
 		</div>
 		<div class="column">
-			<img src="artwork/lowRes/46.jpg" style="width:100%">
-			<img src="artwork/lowRes/47.jpg" style="width:100%">
-			<img src="artwork/lowRes/48.jpg" style="width:100%">
-			<img src="artwork/lowRes/49.jpg" style="width:100%">
-			<img src="artwork/lowRes/50.jpg" style="width:100%">
-			<img src="artwork/lowRes/51.jpg" style="width:100%">
-			<img src="artwork/lowRes/52.jpg" style="width:100%">
-			<img src="artwork/lowRes/53.jpg" style="width:100%">
-			<img src="artwork/lowRes/54.jpg" style="width:100%">
-			<img src="artwork/lowRes/55.jpg" style="width:100%">
-			<img src="artwork/lowRes/56.jpg" style="width:100%">
-			<img src="artwork/lowRes/57.jpg" style="width:100%">
-			<img src="artwork/lowRes/58.jpg" style="width:100%">
-			<img src="artwork/lowRes/59.jpg" style="width:100%">
-			<img src="artwork/lowRes/60.jpg" style="width:100%">
-			<img src="artwork/lowRes/43.jpg" style="width:100%">
-			<img src="artwork/lowRes/44.jpg" style="width:100%">
+			<img class=myImages id=img12 src="artwork/lowRes/12.jpg" style="width:100%">
+			<img class=myImages id=img40 src="artwork/lowRes/39.jpg" style="width:100%">
+			<img class=myImages id=img41 src="artwork/lowRes/40.jpg" style="width:100%">
+			<img class=myImages id=img42 src="artwork/lowRes/41.jpg" style="width:100%">
+			<img class=myImages id=img43 src="artwork/lowRes/42.jpg" style="width:100%">
+			<img class=myImages id=img44 src="artwork/lowRes/45.jpg" style="width:100%">
+			<img class=myImages id=img45 src="artwork/lowRes/62.jpg" style="width:100%">
+			<img class=myImages id=img46 src="artwork/lowRes/46.jpg" style="width:100%">
+			<img class=myImages id=img47 src="artwork/lowRes/47.jpg" style="width:100%">
+			<img class=myImages id=img48 src="artwork/lowRes/48.jpg" style="width:100%">
+			<img class=myImages id=img49 src="artwork/lowRes/49.jpg" style="width:100%">
+			<img class=myImages id=img50 src="artwork/lowRes/50.jpg" style="width:100%">
+			<img class=myImages id=img62 src="artwork/lowRes/44.jpg" style="width:100%">
 		</div>
 	</div>
 
 	<div class="footer">
 		<p>(Placeholder)</p>
 	</div>
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+
+	<script>
+		// create references to the modal...
+		var modal = document.getElementById('myModal');
+		// to all images -- note I'm using a class!
+		var images = document.getElementsByClassName('myImages');
+		// the image in the modal
+		var modalImg = document.getElementById("img01");
+		// and the caption in the modal
+		var captionText = document.getElementById("caption");
+
+		// Go through all of the images with our custom class
+		for (var i = 0; i < images.length; i++) {
+			var img = images[i];
+			// and attach our click listener for this image.
+			img.onclick = function (evt) {
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			}
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+	</script>
+
 </body>
 
 </html>
