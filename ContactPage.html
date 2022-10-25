@@ -2,73 +2,105 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <title>LaurieEastwoodArt</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: "Raleway", Arial, sans-serif
+        }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    input[type=text],
-    select,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical;
-    }
-
-    input[type=submit] {
-      background-color: darkmagenta;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    input[type=submit]:hover {
-      background-color: darkmagenta;
-    }
-
-    .container {
-      border-radius: 5px;
-      background-color: lightgrey;
-      padding: 20px;
-    }
-  </style>
+        .w3-row img {
+            margin-bottom: -8px
+        }
+    </style>
 </head>
 
 <body>
 
-  <h3> Welcome!</h3>
-  <h3>Feel free to contact me using this form.</h3>
+    <div class="w3-content" style="max-width:1500px">
 
-  <div class="container">
-    <form action="/action_page.php">
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <!-- Nav Bar -->
+        <header class="w3-container w3-xlarge w3-padding-24">
+            <font size="6">Laurie Eastwood</font>
+            <a href="#contact" class="w3-right w3-button w3-white">Contact</a>
+            <a href="#classes" class="w3-right w3-button w3-white">Classes</a>
+            <a href="#gallery" class="w3-right w3-button w3-white">Gallery</a>
+            <a href="#" class="w3-right w3-button w3-white">Home</a>
+        </header>
 
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
 
-      <label for="country">Email</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+                * {
+                    box-sizing: border-box;
+                }
 
-      <label for="subject">Contact Information</label>
-      <textarea id="subject" name="subject" placeholder="Write here.." style="height:200px"></textarea>
+                input[type=text],
+                select,
+                textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
 
-      <input type="submit" value="Submit">
-    </form>
-  </div>
+                input[type=submit] {
+                    background-color: teal;
+                    color: white;
+                    padding: 12px 20px;
+                    border: black;
+                    border-style:solid;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                
 
-</body>
+                input[type=submit]:hover {
+                    background-color:lightgrey;
+                    border: black;
+                    border-style:solid;
+                }
+
+                .container {
+                    border-radius: 5px;
+                    background-color: teal;
+                    padding: 20px;
+                }
+            </style>
+        </head>
+        <footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+            <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+                <font size="5">Feel Free to Contact Me!</font>
+
+            <div class="container">
+                <form action="/action_page.php">
+                    <font color= white><label for="fname" >First Name</label></font> 
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <font color=white><label for="lname">Last Name</label></font>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <font color=white><label for="country">Email</label></font>
+                    <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+
+                    <font color=white><label for="subject">Message</label></font>
+                    <textarea id="subject" name="subject" placeholder="Write here.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </body>
 
 </html>
