@@ -12,12 +12,9 @@
 	}
 
 	.header {
-		text-align: center;
-		padding: 32px;
-		color: white;
-		background-image: url("artwork/assets/background3.jpg");
-		border-bottom-style: solid;
-		border-width: 5px;
+		text-align: left;
+		color: black;
+		background-color: white;
 	}
 
 	.footer {
@@ -172,14 +169,35 @@
 	}
 </style>
 
+<head>
+	<title>LaurieEastwoodArt</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+	<style>
+		body {
+			font-family: "Raleway", Arial, sans-serif
+		}
+
+		.w3-row img {
+			margin-bottom: -8px
+		}
+	</style>
+</head>
+
 <body>
 
 	<!-- Header -->
 	<div class="header">
-		<h1>Gallery</h1>
-		<p>(Placeholder)</p>
+		<header class="w3-container w3-xlarge w3-padding-24">
+			<font size="6">Gallery</font>
+			<a href="ContactPage.html" class="w3-right w3-button w3-white">Contact</a>
+			<a href="LaurieEastwoodClasses.html" class="w3-right w3-button w3-white">Classes</a>
+			<a href="gallery.html" class="w3-right w3-button w3-white">Gallery</a>
+			<a href="index.html" class="w3-right w3-button w3-white">Home</a>
+		</header>
 	</div>
-
 	<!-- Photo Grid -->
 	<div class="row">
 		<div class="column">
@@ -275,7 +293,6 @@
 			modal.style.display = "none";
 		}
 	</script>
-
 </body>
 
 </html>
