@@ -24,6 +24,7 @@
 			text-align: center;
 			margin: 50px 50px 75px 100px;
 		}
+
 		h1 {
 			font-family: "Raleway", Arial, sans-serif;
 			font-size: 100px;
@@ -31,11 +32,37 @@
 			text-align: center;
 			margin: 50px 50px 75px 100px;
 		}
+
 		header {
 			background: white;
 		}
-		footer{
+
+		footer {
 			background-image: url("artwork/assets/Background4.png");
+		}
+
+		div.gallery {
+			align-self: center;
+			margin: auto;
+			float: left;
+			width: 50%;
+			height: auto;
+			background: white;
+			font-size: 50px;
+		}
+
+		div.gallery:hover {
+			opacity: 0.5;
+		}
+
+		div.gallery img {
+			width: 100%;
+			height: auto;
+		}
+
+		div.desc {
+			padding: 15px;
+			text-align: center;
 		}
 	</style>
 </head>
@@ -55,7 +82,7 @@
 
 		<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
 			<form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
-			<h1>Laurie Eastwood Art</h1>
+				<h1>Laurie Eastwood Art</h1>
 		</footer>
 		<h5>
 			Hello and welcome! I'm so happy you found your way here.
@@ -96,3 +123,30 @@
 			<br>
 			I hope you’ll join me!
 		</h5>
+		<div class="gallery">
+			<a target="_blank" href="button1.png">
+				<img src="button1.png" alt="Button1" width="1000" height="1000">
+			</a>
+			<div class="desc"><a href="gallery.html">Gallery</a></div>
+		</div>
+
+		<div class="gallery">
+			<a target="_blank" href="button2.png">
+				<img src="button2.png" alt="Button2" width="1000" height="1000">
+			</a>
+			<div class="desc"><a href="LaurieEastwoodClasses.html">Classes</a></div>
+		</div>
+
+		<div class="gallery">
+			<a target="_blank" href="button3.png">
+				<img src="button3.png" alt="Button3" width="1000" height="1000">
+			</a>
+			<div class="desc"><a href="ContactPage.html">Contact Me</a></div>
+		</div>
+
+		<div class="gallery">
+			<a target="_blank" href="button4.png">
+				<img src="button4.png" alt="Button4" width="1000" height="1000">
+			</a>
+			<div class="desc"><a href="#">Shop</a></div>
+		</div>
