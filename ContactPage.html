@@ -15,6 +15,10 @@
         .w3-row img {
             margin-bottom: -8px
         }
+		
+		footer {
+			background-image: url("artwork/assets/background1.jpg");
+		}
     </style>
 </head>
 
@@ -25,11 +29,10 @@
         <!-- Nav Bar -->
         <header class="w3-container w3-xlarge w3-padding-24">
             <font size="6">Laurie Eastwood</font>
-            <a href="#contact" class="w3-right w3-button w3-white">Contact</a>
-            <a href="#store" class="w3-right w3-button w3-white">Store</a>
-            <a href="#classes" class="w3-right w3-button w3-white">Classes</a>
-            <a href="#gallery" class="w3-right w3-button w3-white">Gallery</a>
-            <a href="#" class="w3-right w3-button w3-white">Home</a>
+            <a href="ContactPage.html" class="w3-right w3-button w3-white">Contact</a>
+            <a href="LaurieEastwoodClasses.html" class="w3-right w3-button w3-white">Classes</a>
+            <a href="gallery.html" class="w3-right w3-button w3-white">Gallery</a>
+            <a href="index.html" class="w3-right w3-button w3-white">Home</a>
         </header>
 
         <head>
@@ -57,54 +60,56 @@
                 }
 
                 input[type=submit] {
-                    background-color: teal;
+                    background-color: #BF8FEB;
                     color: white;
                     padding: 12px 20px;
                     border: black;
-                    border-style:solid;
+                    border-style: solid;
                     border-radius: 10px;
                     cursor: pointer;
                 }
-                
+
 
                 input[type=submit]:hover {
-                    background-color:lightgrey;
+                    background-color: lightgrey;
                     border: black;
-                    border-style:solid;
+                    border-style: solid;
                 }
 
                 .container {
                     border-radius: 5px;
-                    background-color: teal;
+                    background-color:#BF8FEB;
                     padding: 20px;
                 }
             </style>
         </head>
         <footer class="w3-light-grey w3-padding-64 w3-center" id="about">
             <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
-                <font size="5">Feel Free to Contact Me!</font>
+                <font style="color:white" size="5">Feel Free to Contact Me!</font>
 
-            <div class="container">
-                <form action="/action_page.php">
-                    <font color= white><label for="fname" >First Name</label></font> 
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <div class="container">
+                    <form action="/action_page.php">
+                        <font color=white><label for="fname">First Name</label></font>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                    <font color=white><label for="lname">Last Name</label></font>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <font color=white><label for="lname">Last Name</label></font>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                    <font color=white><label for="country">Email</label></font>
-                    <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+                        <font color=white><label for="country">Email</label></font>
+                        <input type="text" id="lname" name="lastname" placeholder="Your Email..">
 
-                    <font color=white><label for="subject">Message</label></font>
-                    <textarea id="subject" name="subject" placeholder="Write here.." style="height:200px"></textarea>
+                        <font color=white><label for="subject">Message</label></font>
+                        <textarea id="subject" name="subject" placeholder="Write here.."
+                            style="height:200px"></textarea>
 
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
 
-        </body>
+</body>
+
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-    <h4>Follow Me!</h4>
+    <h4 style="color:white">Follow Me!</h4>
     <img src="fbicon.png" a class="w3-button w3-teal" href="" alt="Facebook" height=40px width=55px></a>
     <img src="igicon.png" a class="w3-button w3-teal" href="" alt="Instagram" height=40px width=55px></a>
 
